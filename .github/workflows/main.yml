@@ -1,0 +1,74 @@
+name: Build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  buildRXM:
+    name: Build RXM
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "5.0.x"
+
+      - name: Restore
+        run: dotnet restore RXM.sln
+
+      - name: Publish
+        run: >
+          dotnet publish RXM/RXM.csproj
+          -c Release
+          -r win-x64
+          --self-contained true
+          /p:PublishSingleFile=true
+          /p:PublishTrimmed=false
+          -o artifacts/dotnet
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: RXM-dotnet-win-x64
+          path: artifacts/dotnet/**
+
+  buildRoonAPI:
+    name: Build RoonApi
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        working-directory: RXM/Roon/RoonApi
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+          cache-dependency-path: RXM/Roon/RoonApi/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Package
+        run: |
+          npm i -D pkg
+          npx pkg server.js --targets node20-win-x64 --output ../../../../artifacts/node/RoonApi.exe
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: RoonApi-node-win-x64
+          path: artifacts/node/**
