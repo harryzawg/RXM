@@ -1,6 +1,6 @@
-﻿siriushits1         | 2    | SiriusXM Hits 1
+siriushits1         | 2    | SiriusXM Hits 1
 9663                | 3    | Unwell Music
-9351                | 4    | SiriusXM 4
+9614                | 4    | Life with John Mayer
 thepulse            | 5    | The Pulse
 9450                | 6    | PopRocks
 totally70s          | 7    | 70s on 7
@@ -8,9 +8,9 @@ big80s              | 8    | 80s on 8
 8206                | 9    | 90s on 9
 8208                | 10   | Pop2K
 9556                | 11   | The 10s Spot
-9608                | 12   | The Kelly Clarkson Connection
+9608                | 12   | KellyClarkson Connection
 9406                | 13   | Pitbull's Globalization
-9614                | 14   | Life with John Mayer
+thebridge           | 14   | The Bridge
 9420                | 15   | Yacht Rock Radio
 starlite            | 16   | The Blend
 coffeehouse         | 17   | The Coffee House
@@ -23,7 +23,7 @@ gratefuldead        | 23   | Grateful Dead
 radiomargaritaville | 24   | Radio Margaritaville
 classicrewind       | 25   | Classic Rewind
 classicvinyl        | 26   | Classic Vinyl
-thebridge           | 27   | The Bridge
+9611                | 27   | Alt2K
 thespectrum         | 28   | The Spectrum
 9139                | 29   | Phish Radio
 9506                | 30   | Dave Matthews Band Radio
@@ -64,7 +64,7 @@ praise              | 64   | Kirk Franklin's Praise
 spirit              | 65   | The Message
 jazzcafe            | 66   | Watercolors
 purejazz            | 67   | Real Jazz
-spa73               | 68   | Spa
+9675                | 68   | Message Worship
 broadwaysbest       | 69   | On Broadway
 siriuslysinatra     | 70   | Siriusly Sinatra
 8205                | 71   | 40s Junction
@@ -75,7 +75,7 @@ siriusblues         | 75   | BB King's Bluesville
 elvisradio          | 76   | Elvis Radio
 bluegrass           | 77   | Bluegrass Junction
 symphonyhall        | 78   | Symphony Hall
-9674                | 79   | The GRAMMY Channel
+9674                | 79   | SiriusXM 79
 espnradio           | 80   | ESPN Radio
 8254                | 81   | ESPN Xtra
 8213                | 82   | Mad Dog Sports Radio
@@ -129,7 +129,7 @@ ewtnglobal          | 130  | EWTN Radio
 9530                | 133  | Disney Hits
 8216                | 134  | Kids Place
 9366                | 135  | KIDZ BOP Radio
-9600                | 136  | Moonbug Radio
+9600                | 136  | CoComelon & Friends
 9133                | 140  | Holy Culture Radio
 9129                | 141  | HUR Voices
 9130                | 142  | HBCU
@@ -168,7 +168,6 @@ premiereplus        | 170  | ICI Première
 thevault            | 308  | Deep Tracks
 jamon               | 309  | Jam On 309
 9547                | 312  | Bon Jovi Radio
-9611                | 313  | Alt2K
 faction             | 314  | FACTION PUNK
 9570                | 315  | Red Hot Chili Peppers
 9364                | 330  | SiriusXM Silk 330
@@ -187,10 +186,10 @@ reggaerhythms       | 332  | Shaggy Boombastic Radio
 9545                | 502  | Limited Edition 2
 9546                | 503  | Limited Edition 3
 9398                | 504  | Limited Edition 4
-9399                | 505  | Limited Edition 5
+9399                | 505  | Mumford & Sons Radio
 9400                | 506  | Limited Edition 6
 9401                | 507  | Limited Edition 7
-9402                | 508  | Limited Edition 8
+9402                | 508  | Miss Jill Scott's Flow
 9403                | 509  | Limited Edition 9
 9548                | 510  | Limited Edition 10
 9549                | 511  | Limited Edition 11
@@ -226,6 +225,7 @@ siriuslove          | 708  | SiriusXM Love
 8227                | 741  | The Village
 metropolitanopera   | 744  | Met Opera Radio
 siriuspops          | 745  | SiriusXM Pops
+spa73               | 746  | Spa
 9511                | 754  | Poplandia
 9501                | 757  | The Tragically Hip Radio
 9513                | 758  | Iceberg
@@ -241,6 +241,7 @@ energie2            | 759  | Les Tubes Franco
 9191                | 768  | La Kueva
 9503                | 771  | She's So Funny
 9542                | 772  | Comedy Classics
+9680                | 773  | Comedy in Full
 9597                | 781  | SiriusXM App Originals
 9662                | 786  | Unwell On Air
 9636                | 787  | SmartLess Radio
